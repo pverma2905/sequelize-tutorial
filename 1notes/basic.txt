@@ -1,0 +1,15 @@
+sequelize:-
+sequelize is promise based nodejs orm tool
+
+orm ->
+orm is a technique to access relational database
+
+why sequelize?
+1)Models & association
+2)validation & datatype
+3)inbuild query
+4)migration
+5)hooks & events
+6)transaction Support
+
+transactionSupport:- two table update at a time

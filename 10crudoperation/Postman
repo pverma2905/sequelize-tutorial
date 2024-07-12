@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "acf26001-9c94-409b-a72e-09d23e1f84c6",
+		"name": "Sequelize Crud Operation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33337187"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"vivek\",\r\n    \"lastName\": \"verma\",\r\n    \"email\": \"vivekverma@gmail.com\",\r\n    \"password\": \"Admin@123\",\r\n    \"age\": 21,\r\n    \"mobileNumber\": 7292725820\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/getallusers"
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/getuser/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"vivek5\",\r\n    \"lastName\": \"verma\",\r\n    \"email\": \"vivekverma@gmail.com\",\r\n    \"password\": \"Admin@123\",\r\n    \"age\": 21,\r\n    \"mobileNumber\": \"7292725820\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/update/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/deletuser/1"
+			},
+			"response": []
+		}
+	]
+}
